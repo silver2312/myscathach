@@ -17,15 +17,6 @@
               @endif
           </li>  
       @endforeach
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-            @if (!($ch->onFirstPage()))
-                <li class="page-item"><a class="page-link" href="{{ $ch->previousPageUrl() }}" rel="prev">← Trở về</a></li>
-            @endif
-            @if ($ch->hasMorePages())
-                <li class="page-item"><a class="page-link" href="{{ $ch->nextPageUrl() }}" rel="next">Xem thêm →</a></li>
-            @endif
-        </ul>
-      </nav>
+      {{$ch->appends(request()->input())->links('pagination::bootstrap-4')}}
   @endif
 </ul>

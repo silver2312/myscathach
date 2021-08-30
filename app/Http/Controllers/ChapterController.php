@@ -92,21 +92,25 @@ class ChapterController extends Controller
     public function show($id)
     {
         $ch = Truyen::find($id);
-        $ch_ps = Chapter::orderBy('position','DESC')->where('truyen_id',$id)->first();
-        if($ch_ps){            
-            $position = $ch_ps->position +1;
-        }else{
-            $position = 1 ;
-        }
-        $ch1 = Truyen::where('id',$id)->first();
-        if(Auth::user()) {               
-            if($ch1->user_id == Auth::user()->id || Auth::user()->level == 0){                
-                return view('admincp.chapter.create')->with(compact('ch','position','ch1'));
+        if($ch->base_url == null){
+            $ch_ps = Chapter::orderBy('position','DESC')->where('truyen_id',$id)->first();
+            if($ch_ps){            
+                $position = $ch_ps->position +1;
             }else{
-                return redirect('/');
+                $position = 1 ;
+            }
+            $ch1 = Truyen::where('id',$id)->first();
+            if(Auth::user()) {               
+                if($ch1->user_id == Auth::user()->id || Auth::user()->level == 0){                
+                    return view('admincp.chapter.create')->with(compact('ch','position','ch1'));
+                }else{
+                    return redirect('/');
+                }
+            }else{
+                return redirect()->route('register');
             }
         }else{
-            return redirect()->route('register');
+            return redirect('/');
         }
     }
 

@@ -26,7 +26,7 @@
                     </style>
                     <ul class="infotruyen">
                         <li>Tên truyện: {{$bk->bk_name}}</li>
-                        <li>Người đăng: {{$bk->userW->name}}</li>
+                        <li>Người đăng: <a style="text-decoration:none;color:skyblue;" href="{{url('trang-ca-nhan/'.$bk->userW->id)}}">{{$bk->userW->name}}</a></li>
                         <li>Tác Giả: {{$bk->author}}</li>
                         <li>Danh mục: 
                             @foreach($bk->thuocnhieudanhmuctruyen as $thuocdanh)
@@ -107,15 +107,18 @@
                                 @endif
                             @endif --}}
                         </div>
-                        <div class="col-3 col-lg-3 text-center">   
-                            @if(Auth::user())
-                                @if($bk->user_id == Auth::user()->id || Auth::user()->level==0)                        
-                                <a href="{{url('chapter/'.$bk->id)}}" class="btn btn-primary"><i class="fas fa-plus"></i></a>
-                                <br>
-                                <span>Thêm chương</span>
+                        
+                        @if(Auth::user())
+                            @if($bk->user_id == Auth::user()->id || Auth::user()->level==0)    
+                                @if($bk->base_url == null)   
+                                    <div class="col-3 col-lg-3 text-center">                    
+                                        <a href="{{url('chapter/'.$bk->id)}}" class="btn btn-primary"><i class="fas fa-plus"></i></a>
+                                        <br>
+                                        <span>Thêm chương</span>
+                                    </div>
                                 @endif
                             @endif
-                        </div>
+                        @endif
                     </div>
                 </div>
             </div>

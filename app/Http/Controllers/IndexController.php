@@ -66,7 +66,7 @@ class IndexController extends Controller
                 $nhiutruyen = $danh->id;
             }
             
-            $ch_fr = Chapter::with('truyenC')->orderBy('id','ASC')->where('truyen_id',$bk->id)->first();            
+            $ch_fr = Chapter::with('truyenC')->orderBy('position','ASC')->where('truyen_id',$bk->id)->first();            
             $ch = Chapter::with('truyenC')->orderBy('position','ASC')->where('truyen_id',$bk->id)->paginate(50);
 
             $g_view = Chapter::with('truyenC')->orderBy('views','DESC')->where('truyen_id',$bk->id)->first();
@@ -78,13 +78,17 @@ class IndexController extends Controller
     
             $cmt = Comment::orderBy('create_at','DESC')->where('bk_id',$bk->id)->get();
     
-            if(count($ch)!=0){
-                $max_views = Chapter::with('truyenC')->orderBy('views','DESC')->where('truyen_id',$bk->id)->first();
+            
+            $max_views = Chapter::with('truyenC')->orderBy('views','DESC')->where('truyen_id',$bk->id)->first();
+            if($max_views != null){
                 $bk->views = $max_views->views;
-                $ch5 = Chapter::with('truyenC')->orderBy('position','ASC')->where('truyen_id',$bk->id)->get();
-                $bk->c_chap = count($ch5);
-                $bk->save();
+            }else{
+                $bk->views = 0;
             }
+            $ch5 = Chapter::with('truyenC')->orderBy('position','ASC')->where('truyen_id',$bk->id)->get();
+            $bk->c_chap = count($ch5);
+            $bk->save();
+            
     
             $c_like = count(Like::where('bk_id',$bk->id)->get());
             if($c_like !=0){            
@@ -459,21 +463,23 @@ class IndexController extends Controller
         //     $position = intval($chap->position) + 1;
         // }
         $num = 0;
-        $ch = Chapter::where('base_url',$c)->where('base_url',$c)->orderBy('position','DESC')->get();
         $max_num = count($c);
         $position = $max_num;
-        while(count($ch) == 0 && $num < $max_num){
-            $ch1 = new Chapter();
-            $ch1->truyen_id = $bid;
-            $ch1->position = $position;
-            $ch1->base_url = $c[$num];            
-            $ch1->active = 0;
-            $ch1->views = 0;
-            $ch1->crea_at =	Carbon::now('Asia/Ho_Chi_Minh');
-            $ch1->upd_at = Carbon::now('Asia/Ho_Chi_Minh');
-            $ch1->save();
+        while($num < $max_num){            
+            $ch = Chapter::where('base_url',$c[$num])->first();
+            if($ch == null){  
+                $ch1 = new Chapter();
+                $ch1->truyen_id = $bid;
+                $ch1->position = $position;
+                $ch1->base_url = $c[$num];            
+                $ch1->active = 0;
+                $ch1->views = 0;
+                $ch1->crea_at =	Carbon::now('Asia/Ho_Chi_Minh');
+                $ch1->upd_at = Carbon::now('Asia/Ho_Chi_Minh');
+                $ch1->save();
+                $position--;              
+            }            
             $num++;
-            $position--;
         }
         return redirect('xemtruyen/'.$bid)->with('status','Đã cập nhật danh sách chương');
     }

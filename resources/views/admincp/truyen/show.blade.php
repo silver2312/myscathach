@@ -8,7 +8,9 @@
             <div class="card">
                 <div class="card-header">Danh sách chương của Truyện: <strong style="font-size: x-large"><a style="text-decoration:none;" href="{{url('xemtruyen/'.$cha->id)}}">{{$cha->bk_name}}</a></strong></div>
 				<div class="card-body">
-					<a class="btn btn-success col-md-2" href="{{route('chapter.show',[$cha->id])}}" role="button">Thêm chương mới</a>
+                    @if($cha->base_url == null)
+					    <a class="btn btn-success col-md-2" href="{{route('chapter.show',[$cha->id])}}" role="button">Thêm chương mới</a>
+                    @endif
                     <br>
 					<br>
 					@if (session('status'))

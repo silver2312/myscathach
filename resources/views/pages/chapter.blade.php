@@ -30,9 +30,9 @@
                 <ul class="pagination">
                     <li style="text-s" disabled><a class="page-link {{$ch->position==$min_id->position ? 'isDisable' : ''}}" href="{{url('doctruyen/'.$ch->truyen_id.'/'.$pre_ch)}}">Trước</a></li>
                     <li>                        
-                        <select class="page-link select-chapter" name="select-chapter" style="position: relative;height:30px;">
+                        <select class="page-link select-chapter col-md-12 col-12" name="select-chapter" style="position: relative;height:30px;">
                             @foreach($all_ch as $key => $vle)
-                                <option width="150px;" value="{{url('doctruyen/'.$vle->truyen_id.'/'.$vle->position)}}">{{$vle->header}}</option>
+                                <option value="{{url('doctruyen/'.$vle->truyen_id.'/'.$vle->position)}}">{{$vle->header}}</option>
                             @endforeach
                         </select>
                     </li>

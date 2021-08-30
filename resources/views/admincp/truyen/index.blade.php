@@ -32,10 +32,8 @@
                                     <th scope="col">Hoàn thành</th>
                                     <th scope="col">Trạng thái</th>
                                     <th scope="col">Danh sách chương</th>
-                                    <th scope="col">Sửa</th>
-                                    @if(Auth::user()->level ==0)
-                                        <th scope="col">Xoá</th>
-                                    @endif
+                                    <th scope="col">Sửa</th>                                    
+                                    <th scope="col">Xoá</th>                                    
                                 </tr>
                             </thead>
                             <tbody>                                
@@ -70,7 +68,7 @@
                                     </td>
                                     <td><a href="{{route('truyen.show',[$bok->id])}}" class="btn btn-primary">Click</a></td>
                                     <td><a href="{{route('truyen.edit',[$bok->id])}}" class="btn btn-primary">Sửa</a></td>
-                                    @if(Auth::user()->level ==0)
+                                    @if(Auth::user()->level ==0 || Auth::user()->id == $bok->user_id)
                                         <td>
                                             <form action="{{route('truyen.destroy',[$bok->id])}}" method="POST">
                                             @method('DELETE')

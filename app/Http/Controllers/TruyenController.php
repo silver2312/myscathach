@@ -221,25 +221,31 @@ class TruyenController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {        
-        $cmt = Comment::where('bk_id',$id)->get();
-        if($cmt){
-            foreach($cmt as $key => $val){                
-                Reply::where('cmt_id',$val->id)->delete();
-            }            
-            Comment::where('bk_id',$id)->delete();
-        }
-        $ch = Chapter::where('truyen_id',$id)->get();
-        if($ch){
-            foreach($ch as $key => $val){                 
-                unlink($val->content);
+    {   
+        if(Auth::user()->level == 0){
+            $cmt = Comment::where('bk_id',$id)->get();
+            if($cmt){
+                foreach($cmt as $key => $val){                
+                    Reply::where('cmt_id',$val->id)->delete();
+                }            
+                Comment::where('bk_id',$id)->delete();
             }
-            Chapter::where('truyen_id',$id)->delete();
+            $ch = Chapter::where('truyen_id',$id)->get();
+            if($ch){
+                foreach($ch as $key => $val){                 
+                    unlink($val->content);
+                }
+                Chapter::where('truyen_id',$id)->delete();
+            }
+            Book_cate::where('bk_id',$id)->delete();
+            Tutruyen::where('bk_id',$id)->delete();
+            Like::where('bk_id',$id)->delete();
+            Truyen::find($id)->delete();
+        }else{
+            $tr = Truyen::find($id);
+            $tr->user_id = 0;
+            $tr->save();
         }
-        Book_cate::where('bk_id',$id)->delete();
-        Tutruyen::where('bk_id',$id)->delete();
-        Like::where('bk_id',$id)->delete();
-        Truyen::find($id)->delete();
         return redirect()->back()->with('status','Đã xoá truyện');
     }
 }
