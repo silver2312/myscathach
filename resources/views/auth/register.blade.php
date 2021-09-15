@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('Đăng ký') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('register') }}" enctype='multipart/form-data'>
                         @csrf
 
                         <div class="form-group row">
@@ -39,9 +39,9 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="text" class="col-md-4 col-form-label text-md-right">{{ __('Link ảnh đại diện') }}</label>
+                            <label for="text" class="col-md-4 col-form-label text-md-right">{{ __('Ảnh đại diện') }}</label>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="u_img">
+                                <input type="file" class="form-control-file" name="u_img">
                             </div>
                         </div>
                         <div class="form-group row">

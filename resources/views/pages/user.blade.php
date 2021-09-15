@@ -28,20 +28,69 @@ body{
         <div class="card">
           <div class="card-body">
             <div class="d-flex flex-column align-items-center text-center">
+              {{-- nút thay đổi ảnh --}}
               @if(Auth::user() != null)
                 @if(Auth::user()->id == $u_pf->id || Auth::user()->level == 0)
-                  <a style="position: absolute;left:25px;top:25px;color:red;" href=""><i class="far fa-edit"></i></a>
+                  <a href="#" style="position: absolute;left:25px;top:25px;color:red;" data-toggle="modal" data-target="#edit_img"><i class="far fa-edit"></i></a>
                 @endif
               @endif
+              {{-- ảnh người dùng --}}
               <img src="{{$u_pf->u_img}}" alt="Admin" class="rounded p-1 bg-primary" width="100%">
               <div class="mt-3">
+                {{-- tên người dùng --}}
                 <h4><span  class="font-weight-bold color_name">{{$u_pf->name}}</span> 
                   @if(Auth::user() != null)
                     @if(Auth::user()->id == $u_pf->id || Auth::user()->level == 0)
-                      <a href=""><i class="far fa-edit"></i></a> 
+                      <a href="#" data-toggle="modal" data-target="#edit_name"><i class="far fa-edit"></i></a> 
                     @endif
                   @endif
                 </h4>
+                {{-- form thay đổi tên người dùng --}}
+                <div class="modal fade" id="edit_name" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Đổi tên</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form action="{{url('change_name/')}}" method="post">
+                            @csrf
+                            <div class="modal-body">
+                                <input type="text" class="form-control" name="name" value="{{ old('name') }}">
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" name="submit" onclick="return confirm('Bạn có chắc chắn muốn đổi tên không?')" class="btn btn-primary" value="Gửi">
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+                </div> 
+                {{-- hết form thay đổi tên người dùng --}}
+                {{-- form thay đổi ảnh người dùng --}}
+                <div class="modal fade" id="edit_img" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Đổi Ảnh</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form action="{{url('change_img/')}}" method="post" enctype='multipart/form-data'>
+                            @csrf
+                            <div class="modal-body">
+                                <input type="file" name="u_img">
+                            </div>
+                            <div class="modal-footer">
+                                <input type="submit" name="submit" onclick="return confirm('Bạn có chắc chắn muốn đổi ảnh không?')" class="btn btn-primary" value="Gửi">
+                            </div>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+                {{-- hết form --}}
                 <p class="text-secondary mb-1">Danh hiệu: Không</p>
                 <p class="text-muted font-size-sm">Thành tựu: Không</p>
                 <p class="text-center" style="margin-top:-10px;font-size:20px;color:rgb(255, 0, 0);">Quyền: @if ($u_pf->level == 0) Admin @elseif($u_pf->level == 1) Mod @elseif($u_pf->level == 2) Vip @else Bình thường @endif</p>
@@ -198,10 +247,8 @@ body{
                         </div>
                     </form>
                 </div>
-            </div>
-          </div>  
-
-
+              </div>
+            </div>  
           </div>
         </div>
         <div class="row">

@@ -93,7 +93,7 @@ class ChapterController extends Controller
     {
         $ch = Truyen::find($id);
         if($ch->base_url == null){
-            $ch_ps = Chapter::orderBy('position','DESC')->where('truyen_id',$id)->first();
+            $ch_ps = Chapter::orderBy('position','ASC')->where('truyen_id',$id)->first();
             if($ch_ps){            
                 $position = $ch_ps->position +1;
             }else{

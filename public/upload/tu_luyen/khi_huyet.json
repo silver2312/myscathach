@@ -1,0 +1,1010 @@
+{
+  "0":{
+    "ten":"Phàm thể",
+    "buff":1,
+    "nang_luong":"không",  
+    "khu_vuc":"Loạn giới",
+    "exp":0,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "1":{
+    "ten":"Mình đồng tiểu thành",
+    "buff":1.5,
+    "nang_luong":"Linh lực",   
+    "hut_exp":1.1,     
+    "khu_vuc":"Loạn giới",
+    "exp":100,
+    "do_kiep":"khong",
+    "tho_nguyen":110
+  },
+  "2":{
+    "ten":"Mình đồng đại thành",
+    "buff":1.2,
+    "nang_luong":"Linh lực",   
+    "hut_exp":1.2,   
+    "exp":2,
+    "do_kiep":"khong",
+    "tho_nguyen":120
+  },
+  "3":{
+    "ten":"Mình đồng viên mãn",
+    "buff":1.6,
+    "nang_luong":"Linh lực",   
+    "hut_exp":1.3,     
+    "khu_vuc":"Loạn giới",
+    "exp":8,
+    "do_kiep":"khong",
+    "tho_nguyen":130
+  },
+  "4":{
+    "ten":"Da sắt tiểu thành",
+    "buff":2,
+    "nang_luong":"Linh lực",   
+    "hut_exp":1.4,     
+    "khu_vuc":"Loạn giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":200
+  },
+  "5":{
+    "ten":"Da sắt đại thành",
+    "buff":1.5,
+    "nang_luong":"Linh lực",   
+    "hut_exp":1.5,     
+    "khu_vuc":"Loạn giới",
+    "exp":3,
+    "do_kiep":"khong",
+    "tho_nguyen":220
+  },
+  "6":{
+    "ten":"Da sắt viên mãn",
+    "buff":1.7,
+    "nang_luong":"Linh lực",   
+    "hut_exp":1.6,     
+    "khu_vuc":"Loạn giới",
+    "exp":6,
+    "do_kiep":"khong",
+    "tho_nguyen":240
+  },
+  "7":{
+    "ten":"Thiết cốt sơ thành",
+    "buff":2.1,
+    "nang_luong":"Linh lực",   
+    "hut_exp":1.7,     
+    "khu_vuc":"Loạn giới",
+    "exp":10,
+    "do_kiep":"co",
+    "tho_nguyen":500
+  },
+  "8":{
+    "ten":"Thiết cốt tiểu thành",
+    "buff":1.5,
+    "nang_luong":"Linh lực",   
+    "hut_exp":1.8,     
+    "khu_vuc":"Loạn giới",
+    "exp":7,
+    "do_kiep":"khong",
+    "tho_nguyen":550
+  },
+  "9":{
+    "ten":"Thiết cốt đại thành",
+    "buff":2,
+    "nang_luong":"Linh lực",   
+    "hut_exp":1.9,     
+    "khu_vuc":"Loạn giới",
+    "exp":8,
+    "do_kiep":"khong",
+    "tho_nguyen":600
+  },
+  "10":{
+    "ten":"Thiết cốt viên mãn",
+    "buff":3,
+    "nang_luong":"Linh lực",   
+    "hut_exp":2,     
+    "khu_vuc":"Loạn giới",
+    "exp":10,
+    "do_kiep":"co",
+    "tho_nguyen":-10
+  },
+  "11":{
+    "ten":"Giao gân sơ thàn",
+    "buff":1.5,
+    "nang_luong":"Linh lực",   
+    "hut_exp":3,     
+    "khu_vuc":"Loạn giới",
+    "exp":4,
+    "do_kiep":"khong",
+    "tho_nguyen":1100
+  },
+  "12":{
+    "ten":"Giao gân tiểu thành",
+    "buff":2,
+    "nang_luong":"Linh lực",   
+    "hut_exp":4,     
+    "khu_vuc":"Loạn giới",
+    "exp":8,
+    "do_kiep":"khong",
+    "tho_nguyen":1200
+  },
+  "13":{
+    "ten":"Giao gân đại thành",
+    "buff":4,
+    "nang_luong":"Linh lực",   
+    "hut_exp":5,     
+    "khu_vuc":"Loạn giới",
+    "exp":10,
+    "do_kiep":"co",
+    "tho_nguyen":2000
+  },
+  "14":{
+    "ten":"Giao gân viên mãn",
+    "buff":1.5,
+    "nang_luong":"Linh lực",   
+    "hut_exp":6,     
+    "khu_vuc":"Loạn giới",
+    "exp":7,
+    "do_kiep":"khong",
+    "tho_nguyen":3000
+  },
+  "15":{
+    "ten":"Ngọc phủ sơ thành",
+    "buff":1.9,
+    "nang_luong":"Linh lực",   
+    "hut_exp":7,     
+    "khu_vuc":"Loạn giới",
+    "exp":9,
+    "do_kiep":"khong",
+    "tho_nguyen":4000
+  },
+  "16":{
+    "ten":"Ngọc phủ tiểu thành",
+    "buff":5,
+    "nang_luong":"Linh lực",   
+    "hut_exp":8,     
+    "khu_vuc":"Loạn giới",
+    "exp":10,
+    "do_kiep":"co",
+    "tho_nguyen":-100
+  },
+  "17":{
+    "ten":"Ngọc phủ đại thành",
+    "buff":2,
+    "nang_luong":"Linh lực",   
+    "hut_exp":9,     
+    "khu_vuc":"Loạn giới",
+    "exp":8,
+    "do_kiep":"khong",
+    "tho_nguyen":15000
+  },
+  "18":{
+    "ten":"Ngọc phủ viên mãn",
+    "buff":3,
+    "nang_luong":"Linh lực",   
+    "hut_exp":10,     
+    "khu_vuc":"Loạn giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":20000
+  },
+  "19":{
+    "ten":"Thiết tạng sơ thành",
+    "buff":10,
+    "nang_luong":"Linh lực",   
+    "hut_exp":15,     
+    "khu_vuc":"Loạn giới",
+    "exp":15,
+    "do_kiep":"co",
+    "tho_nguyen":50000
+  },
+  "20":{
+    "ten":"Thiết tạng tiểu thành",
+    "buff":4,
+    "nang_luong":"Linh lực",   
+    "hut_exp":20,     
+    "khu_vuc":"Loạn giới",
+    "exp":20,
+    "do_kiep":"khong",
+    "tho_nguyen":55000
+  },
+  "21":{
+    "ten":"Thiết tạng đại thành",
+    "buff":7,
+    "nang_luong":"Linh lực",   
+    "hut_exp":25,     
+    "khu_vuc":"Loạn giới",
+    "exp":25,
+    "do_kiep":"khong",
+    "tho_nguyen":60000
+  },
+  "22":{
+    "ten":"Thiết tạng viên mãn",
+    "buff":100,
+    "nang_luong":"Linh lực",   
+    "hut_exp":30,     
+    "khu_vuc":"Loạn giới",
+    "exp":50,
+    "do_kiep":"co",
+    "tho_nguyen":-10000
+  },
+  "23":{
+    "ten":"Ngũ giác sơ thành",
+    "buff":14,
+    "nang_luong":"Linh lực",   
+    "hut_exp":35,     
+    "khu_vuc":"Loạn giới",
+    "exp":55,
+    "do_kiep":"khong",
+    "tho_nguyen":1100000
+  },
+  "24":{
+    "ten":"Ngũ giác tiểu thành",
+    "buff":17,
+    "nang_luong":"Linh lực",   
+    "hut_exp":40,     
+    "khu_vuc":"Loạn giới",
+    "exp":60,
+    "do_kiep":"khong",
+    "tho_nguyen":1200000
+  },
+  "25":{
+    "ten":"Ngũ giác đại thành",
+    "buff":19,
+    "nang_luong":"Linh lực",   
+    "hut_exp":45, 
+    "khu_vuc":"Loạn giới",  
+    "exp":65,
+    "do_kiep":"khong",
+    "tho_nguyen":1500000
+  },
+  "26":{
+    "ten":"Ngũ giác viên mãn",
+    "buff":500,
+    "nang_luong":"Pháp lực",
+    "hut_exp":50,
+    "khu_vuc":"Tiên giới",
+    "exp":1,
+    "do_kiep":"co",
+    "tho_nguyen":5000000
+  },
+  "27":{
+    "ten":"Man huyết",
+    "buff":1000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":24,
+    "khu_vuc":"Tiên giới",
+    "exp":100,
+    "do_kiep":"khong",
+    "tho_nguyen":6000000
+  },
+  "28":{
+    "ten":"Ngọc huyết",
+    "buff":1200,
+    "nang_luong":"Pháp lực",
+    "hut_exp":34,
+    "khu_vuc":"Tiên giới",
+    "exp":1000,
+    "do_kiep":"khong",
+    "tho_nguyen":7000000
+  },
+  "29":{
+    "ten":"Kim huyết",
+    "buff":1400,
+    "nang_luong":"Pháp lực",
+    "hut_exp":44,
+    "khu_vuc":"Tiên giới",
+    "exp":10000,
+    "do_kiep":"khong",
+    "tho_nguyen":8000000
+  },
+  "30":{
+    "ten":"Giao huyết",
+    "buff":1700,
+    "nang_luong":"Pháp lực",
+    "hut_exp":55,
+    "khu_vuc":"Tiên giới",
+    "exp":1000000,
+    "do_kiep":"khong",
+    "tho_nguyen":9000000
+  },
+  "31":{
+    "ten":"Long huyết",
+    "buff":10000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":1000,
+    "khu_vuc":"Tiên giới",
+    "exp":1,
+    "do_kiep":"co",
+    "tho_nguyen":50000000
+  },
+  "32":{
+    "ten":"Tâm huyết nhất chuyển",
+    "buff":1500,
+    "nang_luong":"Pháp lực",
+    "hut_exp":1400,
+    "khu_vuc":"Tiên giới",
+    "exp":44,
+    "do_kiep":"khong",
+    "tho_nguyen":70000000
+  },
+  "33":{
+    "ten":"Tâm huyết nhị chuyển",
+    "buff":2700,
+    "nang_luong":"Pháp lực",
+    "hut_exp":1700,
+    "khu_vuc":"Tiên giới",
+    "exp":55,
+    "do_kiep":"khong",
+    "tho_nguyen":80000000
+  },
+  "34":{
+    "ten":"Tâm huyết tam chuyển",
+    "buff":3800,
+    "nang_luong":"Pháp lực",
+    "hut_exp":2100,
+    "khu_vuc":"Tiên giới",
+    "exp":66,
+    "do_kiep":"khong",
+    "tho_nguyen":90000000
+  },
+  "35":{
+    "ten":"Tâm huyết tứ chuyển",
+    "buff":4900,
+    "nang_luong":"Pháp lực",
+    "hut_exp":3100,
+    "khu_vuc":"Tiên giới",
+    "exp":77,
+    "do_kiep":"khong",
+    "tho_nguyen":100000000
+  },
+  "36":{
+    "ten":"Tâm huyết ngũ chuyển",
+    "buff":10000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":9000,
+    "khu_vuc":"Tiên giới",
+    "exp":1,
+    "do_kiep":"co",
+    "tho_nguyen":500000000
+  },
+  "37":{
+    "ten":"Sơ hồn",
+    "buff":2500,
+    "nang_luong":"Pháp lực",
+    "hut_exp":500,
+    "khu_vuc":"Tiên giới",
+    "exp":55,
+    "do_kiep":"khong",
+    "tho_nguyen":700000000
+  },
+  "38":{
+    "ten":"Âm hồn",
+    "buff":3700,
+    "nang_luong":"Pháp lực",
+    "hut_exp":700,
+    "khu_vuc":"Tiên giới",
+    "exp":77,
+    "do_kiep":"khong",
+    "tho_nguyen":800000000
+  },
+  "39":{
+    "ten":"Sinh hồn",
+    "buff":4800,
+    "nang_luong":"Pháp lực",
+    "hut_exp":900,
+    "khu_vuc":"Tiên giới",
+    "exp":99,
+    "do_kiep":"khong",
+    "tho_nguyen":900000000
+  },
+  "40":{
+    "ten":"Hoả hồn",
+    "buff":5900,
+    "nang_luong":"Pháp lực",
+    "hut_exp":2000,
+    "khu_vuc":"Tiên giới",
+    "exp":111,
+    "do_kiep":"khong",
+    "tho_nguyen":1000000000
+  },
+  "41":{
+    "ten":"Tâm hồn",
+    "buff":1000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":9000,
+    "khu_vuc":"Tiên giới",
+    "exp":1,
+    "do_kiep":"co",
+    "tho_nguyen":-1
+  },
+  "42":{
+    "ten":"Hồi chi",
+    "buff":15000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":100000,
+    "khu_vuc":"Tiên giới",
+    "exp":2000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "43":{
+    "ten":"Hồi tạng",
+    "buff":34000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":400000,
+    "khu_vuc":"Tiên giới",
+    "exp":5000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "44":{
+    "ten":"Hồi tâm",
+    "buff":52000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":30000,
+    "khu_vuc":"Tiên giới",
+    "exp":6000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "45":{
+    "ten":"hồi hồn",
+    "buff":69000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":10000,
+    "khu_vuc":"Tiên giới",
+    "exp":9000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "46":{
+    "ten":"Tích huyết trọng sinh",
+    "buff":10000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":1000000,
+    "khu_vuc":"Tiên giới",
+    "exp":1,
+    "do_kiep":"co",
+    "tho_nguyen":-1
+  },
+  "47":{
+    "ten":"Sơ hồn hợp",
+    "buff":4500000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":400000,
+    "khu_vuc":"Tiên giới",
+    "exp":45000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "48":{
+    "ten":"Âm hồn hợp",
+    "buff":5700000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":30000,
+    "khu_vuc":"Tiên giới",
+    "exp":65000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "49":{
+    "ten":"Sinh hồn hợp",
+    "buff":6800000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":200000,
+    "khu_vuc":"Tiên giới",
+    "exp":74000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "50":{
+    "ten":"Hoả hồn hợp",
+    "buff":7900000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":10000,
+    "khu_vuc":"Tiên giới",
+    "exp":91000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "51":{
+    "ten":"Tâm hồn hợp",
+    "buff":100000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":10000000,
+    "khu_vuc":"Tiên giới",
+    "exp":1,
+    "do_kiep":"co",
+    "tho_nguyen":-1
+  },
+  "52":{
+    "ten":"Tiên thiên phế thể",
+    "buff":5500000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":55000,
+    "khu_vuc":"Tiên giới",
+    "exp":5500000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "53":{
+    "ten":"Tiên thiên thiết thể",
+    "buff":6700000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":67000,
+    "khu_vuc":"Tiên giới",
+    "exp":6700000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "54":{
+    "ten":"Tiên thiên kim thể",
+    "buff":7800000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":78000,
+    "khu_vuc":"Tiên giới",
+    "exp":7800000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "55":{
+    "ten":"Tiên thiên ngọc thể",
+    "buff":8900000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":89000,
+    "khu_vuc":"Tiên giới",
+    "exp":8900000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "56":{
+    "ten":"Man thần tiên thiên thể",
+    "buff":10000000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":100000,
+    "khu_vuc":"Tiên giới",
+    "exp":1,
+    "do_kiep":"co",
+    "tho_nguyen":-1
+  },
+  "57":{
+    "ten":"Giao long thiên thể",
+    "buff":200,
+    "nang_luong":"Pháp lực",
+    "hut_exp":20000,
+    "khu_vuc":"Tiên giới",
+    "exp":2000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "58":{
+    "ten":"Kim long thần thể",
+    "buff":300,
+    "nang_luong":"Pháp lực",
+    "hut_exp":30000,
+    "khu_vuc":"Tiên giới",
+    "exp":6000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "59":{
+    "ten":"Tiên hợp thiên thể",
+    "buff":400,
+    "nang_luong":"Pháp lực",
+    "hut_exp":40000,
+    "khu_vuc":"Tiên giới",
+    "exp":24000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "60":{
+    "ten":"Tiên thiên đạo thể",
+    "buff":500,
+    "nang_luong":"Pháp lực",
+    "hut_exp":50000,
+    "khu_vuc":"Tiên giới",
+    "exp":120000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "61":{
+    "ten":"Nhất chuyển hỗn độn kim thể",
+    "buff":600,
+    "nang_luong":"Pháp lực",
+    "hut_exp":60000,
+    "khu_vuc":"Tiên giới",
+    "exp":720000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "62":{
+    "ten":"Nhị chuyển hỗn độn ngọc thể",
+    "buff":700,
+    "nang_luong":"Pháp lực",
+    "hut_exp":70000,
+    "khu_vuc":"Tiên giới",
+    "exp":950000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "63":{
+    "ten":"Tam chuyển hỗn độn ma thể",
+    "buff":800,
+    "nang_luong":"Pháp lực",
+    "hut_exp":80000,
+    "khu_vuc":"Tiên giới",
+    "exp":1500000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "64":{
+    "ten":"Tứ chuyển hỗn độn chiến thể",
+    "buff":1000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":100000,
+    "khu_vuc":"Tiên giới",
+    "exp":3400000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "65":{
+    "ten":"Ngũ chuyển hỗn độn man thể",
+    "buff":10000000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":10000000,
+    "khu_vuc":"Tiên giới",
+    "exp":1,
+    "do_kiep":"co",
+    "tho_nguyen":-1
+  },
+  "66":{
+    "ten":"Lục chuyển hỗn độn vương thể",
+    "buff":500,
+    "nang_luong":"Pháp lực",
+    "hut_exp":500,
+    "khu_vuc":"Tiên giới",
+    "exp":15000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "67":{
+    "ten":"Thất chuyển hỗn độn đế thể",
+    "buff":700,
+    "nang_luong":"Pháp lực",
+    "hut_exp":700,
+    "khu_vuc":"Tiên giới",
+    "exp":17000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "68":{
+    "ten":"Bát chuyển chuyển hỗn độn thánh thể",
+    "buff":800,
+    "nang_luong":"Pháp lực",
+    "hut_exp":800,
+    "khu_vuc":"Tiên giới",
+    "exp":18000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "69":{
+    "ten":"Cửu chuyển hỗn độn thần thể",
+    "buff":1000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":1000,
+    "khu_vuc":"Tiên giới",
+    "exp":100000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "70":{
+    "ten":"Vô cấu thần thể",
+    "buff":1000000000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":10000000000,
+    "khu_vuc":"Tiên giới",
+    "exp":1,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "71":{
+    "ten":"Vô cấu thần thể",
+    "buff":10000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":10000,
+    "khu_vuc":"Tiên giới",
+    "exp":100000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "72":{
+    "ten":"Vô cấu thần thể",
+    "buff":20000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":20000,
+    "khu_vuc":"Tiên giới",
+    "exp":200000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "73":{
+    "ten":"Vô cấu thần thể",
+    "buff":30000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":30000,
+    "khu_vuc":"Tiên giới",
+    "exp":300000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "74":{
+    "ten":"Vô cấu thần thể",
+    "buff":40000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":40000,
+    "khu_vuc":"Tiên giới",
+    "exp":400000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "75":{
+    "ten":"Vô cấu thần thể",
+    "buff":50000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":50000,
+    "khu_vuc":"Tiên giới",
+    "exp":500000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "76":{
+    "ten":"Vô cấu thần thể",
+    "buff":60000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":60000,
+    "khu_vuc":"Tiên giới",
+    "exp":600000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "77":{
+    "ten":"Vô cấu thần thể",
+    "buff":70000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":70000,
+    "khu_vuc":"Tiên giới",
+    "exp":700000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "78":{
+    "ten":"Vô cấu thần thể",
+    "buff":80000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":80000,
+    "khu_vuc":"Tiên giới",
+    "exp":800000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "79":{
+    "ten":"Vô cấu thần thể",
+    "buff":100000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":100000,
+    "khu_vuc":"Tiên giới",
+    "exp":1000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "80":{
+    "ten":"Vĩnh hằng tiên quân",
+    "buff":9000000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":9000000,
+    "khu_vuc":"Tiên giới",
+    "exp":1,
+    "do_kiep":"co",
+    "tho_nguyen":-1
+  },
+  "81":{
+    "ten":"Vĩnh hằng tiên vương",
+    "buff":5000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":50000,
+    "khu_vuc":"Tiên giới",
+    "exp":5000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "82":{
+    "ten":"Vĩnh hằng tiên tôn",
+    "buff":7000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":70000,
+    "khu_vuc":"Tiên giới",
+    "exp":7000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "83":{
+    "ten":"Vĩnh hằng tiên thánh",
+    "buff":9000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":90000,
+    "khu_vuc":"Tiên giới",
+    "exp":9000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "84":{
+    "ten":"Vĩnh hằng tiên đế",
+    "buff":11000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":110000,
+    "khu_vuc":"Tiên giới",
+    "exp":11000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "85":{
+    "ten":"Vĩnh hằng đạo quân",
+    "buff":13000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":130000,
+    "khu_vuc":"Tiên giới",
+    "exp":13000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "86":{
+    "ten":"Vĩnh hằng đạo vương",
+    "buff":15000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":150000,
+    "khu_vuc":"Tiên giới",
+    "exp":15000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "87":{
+    "ten":"Vĩnh hằng đạo tôn",
+    "buff":17000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":170000,
+    "khu_vuc":"Tiên giới",
+    "exp":17000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "88":{
+    "ten":"Vĩnh hằng đạo thánh",
+    "buff":19000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":190000,
+    "khu_vuc":"Tiên giới",
+    "exp":19000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "89":{
+    "ten":"Vĩnh hằng đạo tổ",
+    "buff":21000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":210000,
+    "khu_vuc":"Tiên giới",
+    "exp":21000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "90":{
+    "ten":"Bất hủ tiên quân",
+    "buff":99000000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":99000000,
+    "khu_vuc":"Tiên giới",
+    "exp":1,
+    "do_kiep":"co",
+    "tho_nguyen":-1
+  },
+  "91":{
+    "ten":"Bất hủ tiên vương",
+    "buff":5000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":50000,
+    "khu_vuc":"Tiên giới",
+    "exp":5000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "92":{
+    "ten":"Bất hủ tiên tôn",
+    "buff":10000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":10000,
+    "khu_vuc":"Tiên giới",
+    "exp":10000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "93":{
+    "ten":"Bất hủ tiên thánh",
+    "buff":15000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":15000,
+    "khu_vuc":"Tiên giới",
+    "exp":15000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "94":{
+    "ten":"Bất hủ tiên đế",
+    "buff":20000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":20000,
+    "khu_vuc":"Tiên giới",
+    "exp":20000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "95":{
+    "ten":"Bất hủ đạo quân",
+    "buff":25000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":25000,
+    "khu_vuc":"Tiên giới",
+    "exp":25000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "96":{
+    "ten":"Bất hủ đạo vương",
+    "buff":30000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":30000,
+    "khu_vuc":"Tiên giới",
+    "exp":30000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "97":{
+    "ten":"Bất hủ đạo tôn",
+    "buff":35000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":35000,
+    "khu_vuc":"Tiên giới",
+    "exp":35000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "98":{
+    "ten":"Bất hủ đạo thánh",
+    "buff":40000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":40000,
+    "khu_vuc":"Tiên giới",
+    "exp":40000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "99":{
+    "ten":"Bất hủ đạo tổ",
+    "buff":45000000,
+    "nang_luong":"Pháp lực",
+    "hut_exp":45000,
+    "khu_vuc":"Tiên giới",
+    "exp":45000000,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "100":{
+    "ten":"VÔ TẠI",
+    "buff":999999999999999999999999999999999999999999999999999999999999999999,
+    "nang_luong":"ME",
+    "hut_exp":0,
+    "khu_vuc":"Tiên giới",
+    "exp":1,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  }
+}

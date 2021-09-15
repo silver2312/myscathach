@@ -1,6 +1,6 @@
 <?php
 namespace App\Http\Controllers;
-
+set_time_limit(500);
 use App\Models\Chapter;
 use Illuminate\Http\Request;
 use App\Models\DanhmucTruyen;
@@ -20,14 +20,21 @@ use Goutte;
 class IndexController extends Controller
 {
     public function Home(){
-
+        //khai báo danh mục
         $cate = DanhmucTruyen::orderBy('id','ASC')->get();
+        // khai báo truyện nhiều views
         $bk = Truyen::orderBy('views','DESC')->where('bk_at',0)->take(12)->get();
+        // khai báo truyện nhiều like
         $bk1 = Truyen::orderBy('like','DESC')->where('bk_at',0)->take(12)->get();
+        // khai báo truyện mới cập nhật
         $bk_up = Truyen::orderBy('updated_at','DESC')->where('bk_at',0)->take(10)->get();
-        $bk_vip = Truyen::orderBy('views','DESC')->where('vip',1)->where('bk_at',0)->take(6)->get();
+        // khai báo truyện đề cử
+        $bk_vip = Truyen::orderBy('views','DESC')->where('vip',1)->where('bk_at',0)->take(12)->get();
+        // khai báo truyện có nhiều view nhất
+        $max_views = Truyen::orderBy('views','DESC')->first();
+        // xác nhận xem có thành phần nào null ko
         if($cate != null && $bk != null && $bk1 != null && $bk_up !=null && $bk_vip !=null){            
-            return view('pages.home')->with(compact('cate','bk','bk_up','bk_vip','bk1'));
+            return view('pages.home')->with(compact('cate','bk','bk_up','bk_vip','bk1','max_views'));
         }else{
             return redirect('/');
         } 
@@ -35,18 +42,18 @@ class IndexController extends Controller
     }
 
     public function danhmuc($cate_slug){
-
+        // khai báo danh mục
         $cate = DanhmucTruyen::orderBy('id','ASC')->get();
-
+        // lấy danh mục theo danh mục slug
         $cate_id = DanhmucTruyen::where('cate_slug',$cate_slug)->first();
         if($cate_id != null){
             $cate_bk = DanhmucTruyen::find($cate_id->id);
-    
+            // khai báo list danh mục id
             $nhiutruyen = [];
             foreach($cate_bk->nhieutruyen as $danh){
                 $nhiutruyen[] = $danh->id;
             }
-    
+            // lấy truyện theo danh mục id
             $bk = Truyen::with('thuocnhieudanhmuctruyen')->where('bk_at',0)->whereIn('id',$nhiutruyen)->paginate(48);
     
             return view('pages.danhmuc')->with(compact('cate','bk','cate_id'));
@@ -61,9 +68,9 @@ class IndexController extends Controller
 
         $bk = Truyen::with('thuocnhieudanhmuctruyen','userW')->where('id',$id)->where('bk_at',0)->first();
         if($bk != null){
-            $nhiutruyen = '';
+            $nhiutruyen = [];
             foreach($bk->thuocnhieudanhmuctruyen as $danh){
-                $nhiutruyen = $danh->id;
+                $nhiutruyen[] = $danh->id;
             }
             
             $ch_fr = Chapter::with('truyenC')->orderBy('position','ASC')->where('truyen_id',$bk->id)->first();            
@@ -74,7 +81,7 @@ class IndexController extends Controller
             $danhmuc = DanhmucTruyen::orderBy('id','DESC')->get();
     
             
-            $bycate = DanhmucTruyen::with('nhieutruyen')->where('id',$nhiutruyen)->take(3)->get();
+            $bycate = DanhmucTruyen::with('nhieutruyen')->whereIn('id',$nhiutruyen)->take(3)->get();
     
             $cmt = Comment::orderBy('create_at','DESC')->where('bk_id',$bk->id)->get();
     
@@ -122,7 +129,7 @@ class IndexController extends Controller
         if($ch->base_url != null){
             if($ch->content == null){                
                 $crawler = Goutte::request('GET', $ch->base_url);
-                $content = $crawler->filter('#bigmaincontent > div.zhengwen_box > div.box_left > div.w_main > div.contentbox')->each(function ($node) {  
+                $content = $crawler->filter('div#contentbox')->each(function ($node) {  
                     return $node->html();       
                 })[0];
                 $dir = 'public/upload/truyen/'.$ch->truyen_id;
@@ -370,118 +377,61 @@ class IndexController extends Controller
 
         return view('pages.post')->with(compact('cate'));
     }
-    public function nhung(Request $request){
-        $data = $request->all();
-        $cut = preg_split ("/\./", $data['link']);
-        if($cut[1] != "uukanshu"){
-            return redirect()->back()->with('err','Bạn nhập nhầm link hoặc chọn nhầm host');
-        }else{
-            $host = "http://sangtacviet.com/surf.php?link=";
-            $url = $host.$data['link'];  
-            $check_url = Truyen::orderBy('id','DESC')->where('base_url',$url)->first();
-            if($check_url!=null){
-              return redirect('xemtruyen/'.$check_url->id);
-            }else{
-              $crawler = Goutte::request('GET', $url);    
-              $truyen = new Truyen();
-              $truyen->curr_url = $data['link'];
-              $truyen->base_url = $url;
-              $truyen->host = $data['host'];
-              $truyen->user_id = Auth::user()->id;
-              $truyen->bk_des = $crawler->filter('.jieshao_content > h3')->each(function ($node) {  
-                return $node->html();       
-              })[0];
-              $truyen->author = $crawler->filter('.jieshao_content > h2 > a')->each(function ($node) {  
-                return $node->text();       
-              })[0];
-              $truyen->bk_img = $crawler->filter('.bookImg > img')->each(function ($node) {  
-                return $node->attr('src');        
-              })[0];
-              $truyen->like = 0;
-              $truyen->views = 0;
-              $truyen->vip = 0;
-              $truyen->c_chap = 0;
-              $truyen->complete = 0;
-              $truyen->cate_id = 55;
-              $truyen->bk_at = 0;
-              $truyen->created_at = Carbon::now('Asia/Ho_Chi_Minh');
-              $truyen->updated_at = Carbon::now('Asia/Ho_Chi_Minh');
-          
-              $name = $crawler->filter('.jieshao_content > h1 > a')->each(function ($node) {  
-                return $node->html();       
-              })[0];    
-              $text = "chương mới nhất";
-              $fin_text = preg_split ("/".$text."/", $name)[0];
-              if($fin_text){
-                $truyen->bk_name = $fin_text;
-              }      
-              $truyen->save();
-          
-              $truyen = Truyen::orderBy('updated_at','DESC')->first();          
-              $cate = new Book_cate();
-              $cate->bk_id = $truyen->id;
-              $cate->cate_id = 55;
-              $cate->save();
-              
-              $po = $crawler->filter('#chapterList > li > a')->each(function ($node) { 
-                // dump($node->html());     
-                return $node->attr('href');    
-              });
-              $max_position = count($po) - 1;
-              $position = 1;
-              while($max_position >= 0){
-                $chap = new Chapter();
-                $base_url = 'http://sangtacviet.com/surf.php?link=https://www.uukanshu.com'.$po[$max_position];
-                $chap->base_url = $base_url;
-                $chap->truyen_id = $truyen->id;
-                $chap->active = 0;
-                $chap->position = $position;
-                $chap->views = 0;
-                $chap->crea_at =	Carbon::now('Asia/Ho_Chi_Minh');
-                $chap->upd_at	= Carbon::now('Asia/Ho_Chi_Minh');
-                $chap->save();
-                $max_position--;
-                $position++;
-              }
-              return redirect()->back()->with('status','Đã nhúng');
-        }
-        
-        }
+    public function change_name(Request $request){
+        $data = $request->validate(
+            [
+                'name' => 'required|unique:users|max:25',
+            ],
+            [
+                'name.required' => 'Chưa nhập tên',
+                'name.unipue' => 'Đã có người sử dụng tên này này'
+            ]
+        );
+        $user = User::find(Auth::user()->id);
+        $user->name = $data['name'];
+        $user->save();
+        return redirect()->back()->with('status','Thành công');
     }
-    public function res_chap($bid){
-        $truyen = Truyen::where('id',$bid)->first();
-        $crawler = Goutte::request('GET', $truyen->base_url);        
-        
-        $c = $crawler->filter('#chapterList > li > a')->each(function ($node) {
-            return 'http://sangtacviet.com/surf.php?link=https://www.uukanshu.com'.$node->attr('href');            
-        });
-        // $chap1 = Chapter::where('truyen_id',$bid)->orderBy('position','DESC')->get();
-        // if(count($chap1) == 0){
-        //     $position = 1;
-        // }else{
-        //     $chap = Chapter::where('truyen_id',$bid)->orderBy('position','DESC')->first();
-        //     $position = intval($chap->position) + 1;
-        // }
-        $num = 0;
-        $max_num = count($c);
-        $position = $max_num;
-        while($num < $max_num){            
-            $ch = Chapter::where('base_url',$c[$num])->first();
-            if($ch == null){  
-                $ch1 = new Chapter();
-                $ch1->truyen_id = $bid;
-                $ch1->position = $position;
-                $ch1->base_url = $c[$num];            
-                $ch1->active = 0;
-                $ch1->views = 0;
-                $ch1->crea_at =	Carbon::now('Asia/Ho_Chi_Minh');
-                $ch1->upd_at = Carbon::now('Asia/Ho_Chi_Minh');
-                $ch1->save();
-                $position--;              
-            }            
-            $num++;
+    public function change_img(Request $request){
+        $data = $request->validate(
+            [
+                'u_img' => 'required:max:2048',
+            ],
+            [
+                'u_img.required' => 'Chưa chọn ảnh',
+            ]
+        );
+        $get_image = $request->file('u_img');
+        $user = User::find(Auth::user()->id);
+
+        if($get_image != null){
+            $path = 'public/upload/user/';    
+            // cắt đường dẫn ảnh
+            $cut = preg_split ("/\//", $user->u_img);
+            // xác nhận có ảnh trong thư mục không
+            if(file_exists($path.$cut[7])){
+                // xoá ảnh cũ
+                unlink($path.$cut[7]);
+            }    
+            // cắt tên email
+            $cut1 = preg_split ("/\@/", $user->email);
+            // lấy tên ảnh gốc
+            $get_name_image = $get_image->getClientOriginalName();
+            // cắt tên ảnh gốc
+            $cutname = preg_split ("/\./", $get_name_image);
+            // ghép tên ảnh
+            $name_image = $cut1[0].'.'.$cutname[1];
+            // lưu ảnh
+            $get_image->move($path,$name_image);   
+            // đường dẫn ảnh     
+            $img = url($path.$name_image);
+            // database bảng user
+            $user->u_img = $img;
+        }else{
+            $user->u_img = $user->u_img;
         }
-        return redirect('xemtruyen/'.$bid)->with('status','Đã cập nhật danh sách chương');
+        $user->save();
+        return redirect()->back()->with('status','Thành công');
     }
 }
 

@@ -22,7 +22,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <form  method="POST" action="{{route('truyen.store')}}">
+                    <form  method="POST" action="{{route('truyen.store')}}" enctype='multipart/form-data'>
                         @csrf
                         <div class="form-group">
                             <label>Tên Truyện</label>
@@ -30,8 +30,8 @@
                             <input type="hidden" id="convert_slug" class="form-control" name="bk_slug" value="{{old('bk_slug')}}">
                         </div>
                         <div class="form-group">
-                            <label>Link ảnh truyện</label>
-                            <input type="text" value="{{old('bk_img')}}" class="form-control" name="bk_img">
+                            <label>Ảnh truyện</label>
+                            <input type="file" class="form-control-file" name="bk_img">
                         </div>
                         <div class="form-group">
                             <label>Tác giả</label>

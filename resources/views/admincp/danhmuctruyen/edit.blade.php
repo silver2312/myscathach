@@ -1,6 +1,6 @@
 @extends('layouts.app')
-
 @section('content')
+@include('layouts.Inav')
 
 <div class="container">
     <div class="row justify-content-center">
@@ -22,19 +22,19 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <form  method="POST" action="{{route('danhmuc.update',[$cate->id])}}">
+                    <form  method="POST" action="{{route('danhmuc.update',[$ca->id])}}">
 						@method('PUT')
                         @csrf
                         <div class="form-group">
                           <label>Tên Thể Loại</label>
-                          <input type="text" id="slug" onkeyup="ChangeToSlug();" class="form-control" name="cate_name" value="{{$cate->cate_name}}">
-                          <input type="hidden" id="convert_slug"  value="{{$cate->cate_slug}}" class="form-control" name="cate_slug">
+                          <input type="text" id="slug" onkeyup="ChangeToSlug();" class="form-control" name="cate_name" value="{{$ca->cate_name}}">
+                          <input type="hidden" id="convert_slug"  value="{{$ca->cate_slug}}" class="form-control" name="cate_slug">
                         </div>						
                         <div class="form-group">
                             <label>Mô tả thể loại</label>
-                            <textarea name="cate_des" class="form-control" cols="30" rows="10">{{$cate->cate_des}}</textarea>
+                            <textarea name="cate_des" class="form-control" cols="30" rows="10">{{$ca->cate_des}}</textarea>
                         </div>
-                        <button type="submit" name="themdanhmuc" class="btn btn-primary">Sửa</button>
+                        <button type="submit" name="suadanhmuc" class="btn btn-primary">Sửa</button>
                       </form>
                 </div>
             </div>

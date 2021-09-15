@@ -6,13 +6,13 @@
                     <a class="nav-link" href="{{url('/cap-nhat')}}">Cập nhật</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Chat tổng</a>
+                    <a class="nav-link" href="#">BXH</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Thể loại
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="themes">
+                    <div class="dropdown-menu col-md-12 col-12" aria-labelledby="themes">
                         @foreach($cate as $key => $value)
                             <a class="dropdown-item" href="{{url('the-loai/'.$value->cate_slug)}}">{{$value->cate_name}}</a>
                         @endforeach

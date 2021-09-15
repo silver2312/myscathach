@@ -32,7 +32,8 @@ class DanhmucController extends Controller
     public function create()
     {
         if(Auth::user()!= null && Auth::user()->level == 0){
-            return view('admincp.danhmuctruyen.create');
+            $cate = DanhmucTruyen::orderBy('id','ASC')->get();
+            return view('admincp.danhmuctruyen.create')->with(compact('cate'));
         }else{
             return redirect('/');
         }
@@ -86,9 +87,10 @@ class DanhmucController extends Controller
      */
     public function edit($id)
     {
-        $cate = DanhmucTruyen::find($id);
+        $ca = DanhmucTruyen::find($id);
+        $cate = DanhmucTruyen::orderBy('id','ASC')->get();
         if(Auth::user()!= null && Auth::user()->level == 0){
-            return view('admincp.danhmuctruyen.edit')->with(compact('cate'));
+            return view('admincp.danhmuctruyen.edit')->with(compact('cate','ca'));
         }else{
             return redirect('/');
         }

@@ -1,0 +1,1010 @@
+{
+  "0":{
+    "ten":"Bất kham nhất kích",
+    "buff":1,
+    "nang_luong":"không",  
+    "khu_vuc":"Nhân giới",
+    "exp":0,
+    "do_kiep":"khong",
+    "tho_nguyen":-1
+  },
+  "1":{
+    "ten":"Sơ học xạ luyện",
+    "buff":1.5,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.1,     
+    "khu_vuc":"Nhân giới",
+    "exp":100,
+    "do_kiep":"khong",
+    "tho_nguyen":101
+  },
+  "2":{
+    "ten":"Sơ học xạ luyện",
+    "buff":1.2,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.2,   
+    "exp":1.2,
+    "do_kiep":"khong",
+    "tho_nguyen":1
+  },
+  "3":{
+    "ten":"Sơ học xạ luyện",
+    "buff":1.6,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.3,     
+    "khu_vuc":"Nhân giới",
+    "exp":1.8,
+    "do_kiep":"khong",
+    "tho_nguyen":1
+  },
+  "4":{
+    "ten":"Sơ học xạ luyện",
+    "buff":1.7,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.4,     
+    "khu_vuc":"Nhân giới",
+    "exp":1.9,
+    "do_kiep":"khong",
+    "tho_nguyen":1
+  },
+  "5":{
+    "ten":"Sơ khuy môn kính",
+    "buff":2,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.5,     
+    "khu_vuc":"Nhân giới",
+    "exp":2,
+    "do_kiep":"khong",
+    "tho_nguyen":1
+  },
+  "6":{
+    "ten":"Sơ khuy môn kính",
+    "buff":1.7,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.6,     
+    "khu_vuc":"Nhân giới",
+    "exp":2.2,
+    "do_kiep":"khong",
+    "tho_nguyen":1
+  },
+  "7":{
+    "ten":"Sơ khuy môn kính",
+    "buff":1.2,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.7,     
+    "khu_vuc":"Nhân giới",
+    "exp":3,
+    "do_kiep":"khong",
+    "tho_nguyen":1
+  },
+  "8":{
+    "ten":"Sơ khuy môn kính",
+    "buff":1.5,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.8,     
+    "khu_vuc":"Nhân giới",
+    "exp":7,
+    "do_kiep":"khong",
+    "tho_nguyen":1
+  },
+  "9":{
+    "ten":"Sơ khuy môn kính",
+    "buff":1.2,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.9,     
+    "khu_vuc":"Nhân giới",
+    "exp":8,
+    "do_kiep":"khong",
+    "tho_nguyen":1
+  },
+  "10":{
+    "ten":"Lược hữu tiểu thành",
+    "buff":3,
+    "nang_luong":"Nội lực",   
+    "hut_exp":2.1,     
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":2
+  },
+  "11":{
+    "ten":"Lược hữu tiểu thành",
+    "buff":1.5,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.3,     
+    "khu_vuc":"Nhân giới",
+    "exp":6,
+    "do_kiep":"khong",
+    "tho_nguyen":2
+  },
+  "12":{
+    "ten":"Lược hữu tiểu thành",
+    "buff":1.5,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.4,     
+    "khu_vuc":"Nhân giới",
+    "exp":8,
+    "do_kiep":"khong",
+    "tho_nguyen":2
+  },
+  "13":{
+    "ten":"Lược hữu tiểu thành",
+    "buff":1.5,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.5,     
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":2
+  },
+  "14":{
+    "ten":"Lược hữu tiểu thành",
+    "buff":1.5,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.6,     
+    "khu_vuc":"Nhân giới",
+    "exp":12,
+    "do_kiep":"khong",
+    "tho_nguyen":2
+  },
+  "15":{
+    "ten":"Giá kinh tựu thực",
+    "buff":3,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.7,     
+    "khu_vuc":"Nhân giới",
+    "exp":28,
+    "do_kiep":"khong",
+    "tho_nguyen":3
+  },
+  "16":{
+    "ten":"Giá kinh tựu thực",
+    "buff":1.5,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.8,     
+    "khu_vuc":"Nhân giới",
+    "exp":16,
+    "do_kiep":"khong",
+    "tho_nguyen":3
+  },
+  "17":{
+    "ten":"Giá kinh tựu thực",
+    "buff":2.1,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.9,     
+    "khu_vuc":"Nhân giới",
+    "exp":18,
+    "do_kiep":"khong",
+    "tho_nguyen":3
+  },
+  "18":{
+    "ten":"Giá kinh tựu thực",
+    "buff":2.5,
+    "nang_luong":"Nội lực",   
+    "hut_exp":2.10,     
+    "khu_vuc":"Nhân giới",
+    "exp":20,
+    "do_kiep":"khong",
+    "tho_nguyen":3
+  },
+  "19":{
+    "ten":"Giá kinh tựu thực",
+    "buff":1.4,
+    "nang_luong":"Nội lực",   
+    "hut_exp":2.15,     
+    "khu_vuc":"Nhân giới",
+    "exp":15,
+    "do_kiep":"khong",
+    "tho_nguyen":3
+  },
+  "20":{
+    "ten":"Dung hội quán thông",
+    "buff":4,
+    "nang_luong":"Nội lực",   
+    "hut_exp":2.20,     
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":4
+  },
+  "21":{
+    "ten":"Dung hội quán thông",
+    "buff":1.7,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.25,     
+    "khu_vuc":"Nhân giới",
+    "exp":5,
+    "do_kiep":"khong",
+    "tho_nguyen":4
+  },
+  "22":{
+    "ten":"Dung hội quán thông",
+    "buff":1.100,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.30,     
+    "khu_vuc":"Nhân giới",
+    "exp":7,
+    "do_kiep":"khong",
+    "tho_nguyen":4
+  },
+  "23":{
+    "ten":"Dung hội quán thông",
+    "buff":1.14,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.35,     
+    "khu_vuc":"Nhân giới",
+    "exp":9,
+    "do_kiep":"khong",
+    "tho_nguyen":4
+  },
+  "24":{
+    "ten":"Dung hội quán thông",
+    "buff":1.17,
+    "nang_luong":"Nội lực",   
+    "hut_exp":1.40,     
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":4
+  },
+  "25":{
+    "ten":"Lô hỏa thuần thanh",
+    "buff":1.19,
+    "nang_luong":"Nội lực",   
+    "hut_exp":2, 
+    "khu_vuc":"Nhân giới",  
+    "exp":40,
+    "do_kiep":"khong",
+    "tho_nguyen":5
+  },
+  "26":{
+    "ten":"Lô hỏa thuần thanh",
+    "buff":2.500,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.5,
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":5
+  },
+  "27":{
+    "ten":"Lô hỏa thuần thanh",
+    "buff":1.1000,
+    "nang_luong":"Nội lực",
+    "hut_exp":2.4,
+    "khu_vuc":"Nhân giới",
+    "exp":8,
+    "do_kiep":"khong",
+    "tho_nguyen":5
+  },
+  "28":{
+    "ten":"Lô hỏa thuần thanh",
+    "buff":2.1200,
+    "nang_luong":"Nội lực",
+    "hut_exp":3.4,
+    "khu_vuc":"Nhân giới",
+    "exp":7,
+    "do_kiep":"khong",
+    "tho_nguyen":5
+  },
+  "29":{
+    "ten":"Lô hỏa thuần thanh",
+    "buff":2.1400,
+    "nang_luong":"Nội lực",
+    "hut_exp":4.4,
+    "khu_vuc":"Nhân giới",
+    "exp":9,
+    "do_kiep":"khong",
+    "tho_nguyen":5
+  },
+  "30":{
+    "ten":"Kỳ tài xuất chúng",
+    "buff":7,
+    "nang_luong":"Nội lực",
+    "hut_exp":5.5,
+    "khu_vuc":"Nhân giới",
+    "exp":100,
+    "do_kiep":"khong",
+    "tho_nguyen":6
+  },
+  "31":{
+    "ten":"Kỳ tài xuất chúng",
+    "buff":1.2,
+    "nang_luong":"Nội lực",
+    "hut_exp":10,
+    "khu_vuc":"Nhân giới",
+    "exp":33,
+    "do_kiep":"khong",
+    "tho_nguyen":6
+  },
+  "32":{
+    "ten":"Kỳ tài xuất chúng",
+    "buff":1.5,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.4,
+    "khu_vuc":"Nhân giới",
+    "exp":44,
+    "do_kiep":"khong",
+    "tho_nguyen":6
+  },
+  "33":{
+    "ten":"Kỳ tài xuất chúng",
+    "buff":1.7,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.7,
+    "khu_vuc":"Nhân giới",
+    "exp":55,
+    "do_kiep":"khong",
+    "tho_nguyen":6
+  },
+  "34":{
+    "ten":"Kỳ tài xuất chúng",
+    "buff":1.8,
+    "nang_luong":"Nội lực",
+    "hut_exp":2.1,
+    "khu_vuc":"Nhân giới",
+    "exp":66,
+    "do_kiep":"khong",
+    "tho_nguyen":6
+  },
+  "35":{
+    "ten":"Thần hồ kỳ kỹ",
+    "buff":8,
+    "nang_luong":"Nội lực",
+    "hut_exp":3.1,
+    "khu_vuc":"Nhân giới",
+    "exp":80,
+    "do_kiep":"khong",
+    "tho_nguyen":6
+  },
+  "36":{
+    "ten":"Thần hồ kỳ kỹ",
+    "buff":1.9,
+    "nang_luong":"Nội lực",
+    "hut_exp":2,
+    "khu_vuc":"Nhân giới",
+    "exp":1,
+    "do_kiep":"khong",
+    "tho_nguyen":6
+  },
+  "37":{
+    "ten":"Thần hồ kỳ kỹ",
+    "buff":2.5,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.5,
+    "khu_vuc":"Nhân giới",
+    "exp":55,
+    "do_kiep":"khong",
+    "tho_nguyen":6
+  },
+  "38":{
+    "ten":"Thần hồ kỳ kỹ",
+    "buff":3.7,
+    "nang_luong":"Nội lực",
+    "hut_exp":7,
+    "khu_vuc":"Nhân giới",
+    "exp":77,
+    "do_kiep":"khong",
+    "tho_nguyen":6
+  },
+  "39":{
+    "ten":"Thần hồ kỳ kỹ",
+    "buff":1.8,
+    "nang_luong":"Nội lực",
+    "hut_exp":900,
+    "khu_vuc":"Nhân giới",
+    "exp":99,
+    "do_kiep":"khong",
+    "tho_nguyen":6
+  },
+  "40":{
+    "ten":"Xuất Thần Nhập Hóa",
+    "buff":9,
+    "nang_luong":"Nội lực",
+    "hut_exp":2,
+    "khu_vuc":"Nhân giới",
+    "exp":100,
+    "do_kiep":"khong",
+    "tho_nguyen":7
+  },
+  "41":{
+    "ten":"Xuất Thần Nhập Hóa",
+    "buff":2,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.2,
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":7
+  },
+  "42":{
+    "ten":"Xuất Thần Nhập Hóa",
+    "buff":1.5,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.3,
+    "khu_vuc":"Nhân giới",
+    "exp":14,
+    "do_kiep":"khong",
+    "tho_nguyen":7
+  },
+  "43":{
+    "ten":"Xuất Thần Nhập Hóa",
+    "buff":1.4,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.4,
+    "khu_vuc":"Nhân giới",
+    "exp":15,
+    "do_kiep":"khong",
+    "tho_nguyen":7
+  },
+  "44":{
+    "ten":"Xuất Thần Nhập Hóa",
+    "buff":1.5,
+    "nang_luong":"Nội lực",
+    "hut_exp":3,
+    "khu_vuc":"Nhân giới",
+    "exp":16,
+    "do_kiep":"khong",
+    "tho_nguyen":7
+  },
+  "45":{
+    "ten":"Ngạo thị quần hùng",
+    "buff":10,
+    "nang_luong":"Nội lực",
+    "hut_exp":3,
+    "khu_vuc":"Nhân giới",
+    "exp":100,
+    "do_kiep":"khong",
+    "tho_nguyen":8
+  },
+  "46":{
+    "ten":"Ngạo thị quần hùng",
+    "buff":1.7,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.2,
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":8
+  },
+  "47":{
+    "ten":"Ngạo thị quần hùng",
+    "buff":2,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.5,
+    "khu_vuc":"Nhân giới",
+    "exp":12,
+    "do_kiep":"khong",
+    "tho_nguyen":8
+  },
+  "48":{
+    "ten":"Ngạo thị quần hùng",
+    "buff":1.7,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.3,
+    "khu_vuc":"Nhân giới",
+    "exp":14,
+    "do_kiep":"khong",
+    "tho_nguyen":8
+  },
+  "49":{
+    "ten":"Ngạo thị quần hùng",
+    "buff":1.8,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.2,
+    "khu_vuc":"Nhân giới",
+    "exp":1.6,
+    "do_kiep":"khong",
+    "tho_nguyen":8
+  },
+  "50":{
+    "ten":"Đăng phong tạo cực",
+    "buff":100,
+    "nang_luong":"Nội lực",
+    "hut_exp":10000,
+    "khu_vuc":"Nhân giới",
+    "exp":1000000,
+    "do_kiep":"khong",
+    "tho_nguyen":9
+  },
+  "51":{
+    "ten":"Đăng phong tạo cực",
+    "buff":1.5,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.3,
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":9
+  },
+  "52":{
+    "ten":"Đăng phong tạo cực",
+    "buff":1.2,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.5,
+    "khu_vuc":"Nhân giới",
+    "exp":100,
+    "do_kiep":"khong",
+    "tho_nguyen":9
+  },
+  "53":{
+    "ten":"Đăng phong tạo cực",
+    "buff":1.7,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.7,
+    "khu_vuc":"Nhân giới",
+    "exp":100,
+    "do_kiep":"khong",
+    "tho_nguyen":9
+  },
+  "54":{
+    "ten":"Đăng phong tạo cực",
+    "buff":2,
+    "nang_luong":"Nội lực",
+    "hut_exp":2,
+    "khu_vuc":"Nhân giới",
+    "exp":100,
+    "do_kiep":"khong",
+    "tho_nguyen":9
+  },
+  "55":{
+    "ten":"Vô dữ luận tỉ",
+    "buff":110,
+    "nang_luong":"Nội lực",
+    "hut_exp":100,
+    "khu_vuc":"Nhân giới",
+    "exp":1000,
+    "do_kiep":"khong",
+    "tho_nguyen":10
+  },
+  "56":{
+    "ten":"Vô dữ luận tỉ",
+    "buff":1.8,
+    "nang_luong":"Nội lực",
+    "hut_exp":2,
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":10
+  },
+  "57":{
+    "ten":"Vô dữ luận tỉ",
+    "buff":1.9,
+    "nang_luong":"Nội lực",
+    "hut_exp":4,
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":10
+  },
+  "58":{
+    "ten":"Vô dữ luận tỉ",
+    "buff":5,
+    "nang_luong":"Nội lực",
+    "hut_exp":3,
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":10
+  },
+  "59":{
+    "ten":"Vô dữ luận tỉ",
+    "buff":4,
+    "nang_luong":"Nội lực",
+    "hut_exp":4,
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":10
+  },
+  "60":{
+    "ten":"Sở hướng phí mị",
+    "buff":500,
+    "nang_luong":"Nội lực",
+    "hut_exp":5,
+    "khu_vuc":"Nhân giới",
+    "exp":10000,
+    "do_kiep":"khong",
+    "tho_nguyen":11
+  },
+  "61":{
+    "ten":"Sở hướng phí mị",
+    "buff":6,
+    "nang_luong":"Nội lực",
+    "hut_exp":4,
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":11
+  },
+  "62":{
+    "ten":"Sở hướng phí mị",
+    "buff":1.4,
+    "nang_luong":"Nội lực",
+    "hut_exp":2,
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":11
+  },
+  "63":{
+    "ten":"Sở hướng phí mị",
+    "buff":1.7,
+    "nang_luong":"Nội lực",
+    "hut_exp":8,
+    "khu_vuc":"Nhân giới",
+    "exp":15,
+    "do_kiep":"khong",
+    "tho_nguyen":11
+  },
+  "64":{
+    "ten":"Sở hướng phí mị",
+    "buff":2,
+    "nang_luong":"Nội lực",
+    "hut_exp":10,
+    "khu_vuc":"Nhân giới",
+    "exp":30,
+    "do_kiep":"khong",
+    "tho_nguyen":11
+  },
+  "65":{
+    "ten":"Nhất đại tôn sư",
+    "buff":100,
+    "nang_luong":"Nội lực",
+    "hut_exp":10,
+    "khu_vuc":"Nhân giới",
+    "exp":50,
+    "do_kiep":"khong",
+    "tho_nguyen":12
+  },
+  "66":{
+    "ten":"Nhất đại tôn sư",
+    "buff":1.5,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.5,
+    "khu_vuc":"Nhân giới",
+    "exp":15,
+    "do_kiep":"khong",
+    "tho_nguyen":12
+  },
+  "67":{
+    "ten":"Nhất đại tôn sư",
+    "buff":1.7,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.7,
+    "khu_vuc":"Nhân giới",
+    "exp":17,
+    "do_kiep":"khong",
+    "tho_nguyen":12
+  },
+  "68":{
+    "ten":"Nhất đại tôn sư",
+    "buff":1.8,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.8,
+    "khu_vuc":"Nhân giới",
+    "exp":18,
+    "do_kiep":"khong",
+    "tho_nguyen":12
+  },
+  "69":{
+    "ten":"Nhất đại tôn sư",
+    "buff":2,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.99,
+    "khu_vuc":"Nhân giới",
+    "exp":20,
+    "do_kiep":"khong",
+    "tho_nguyen":12
+  },
+  "70":{
+    "ten":"Thần công cái thế",
+    "buff":50,
+    "nang_luong":"Nội lực",
+    "hut_exp":100,
+    "khu_vuc":"Nhân giới",
+    "exp":1,
+    "do_kiep":"khong",
+    "tho_nguyen":13
+  },
+  "71":{
+    "ten":"Thần công cái thế",
+    "buff":2,
+    "nang_luong":"Nội lực",
+    "hut_exp":10,
+    "khu_vuc":"Nhân giới",
+    "exp":20,
+    "do_kiep":"khong",
+    "tho_nguyen":13
+  },
+  "72":{
+    "ten":"Thần công cái thế",
+    "buff":1.5,
+    "nang_luong":"Nội lực",
+    "hut_exp":2,
+    "khu_vuc":"Nhân giới",
+    "exp":100,
+    "do_kiep":"khong",
+    "tho_nguyen":13
+  },
+  "73":{
+    "ten":"Thần công cái thế",
+    "buff":2,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.3,
+    "khu_vuc":"Nhân giới",
+    "exp":30,
+    "do_kiep":"khong",
+    "tho_nguyen":13
+  },
+  "74":{
+    "ten":"Thần công cái thế",
+    "buff":4,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.4,
+    "khu_vuc":"Nhân giới",
+    "exp":40,
+    "do_kiep":"khong",
+    "tho_nguyen":13
+  },
+  "75":{
+    "ten":"Cử thế vô song",
+    "buff":50,
+    "nang_luong":"Nội lực",
+    "hut_exp":50,
+    "khu_vuc":"Nhân giới",
+    "exp":50,
+    "do_kiep":"khong",
+    "tho_nguyen":14
+  },
+  "76":{
+    "ten":"Cử thế vô song",
+    "buff":1.6,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.6,
+    "khu_vuc":"Nhân giới",
+    "exp":60,
+    "do_kiep":"khong",
+    "tho_nguyen":14
+  },
+  "77":{
+    "ten":"Cử thế vô song",
+    "buff":1.7,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.7,
+    "khu_vuc":"Nhân giới",
+    "exp":70,
+    "do_kiep":"khong",
+    "tho_nguyen":14
+  },
+  "78":{
+    "ten":"Cử thế vô song",
+    "buff":1.8,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.8,
+    "khu_vuc":"Nhân giới",
+    "exp":80,
+    "do_kiep":"khong",
+    "tho_nguyen":14
+  },
+  "79":{
+    "ten":"Cử thế vô song",
+    "buff":2,
+    "nang_luong":"Nội lực",
+    "hut_exp":2,
+    "khu_vuc":"Nhân giới",
+    "exp":100,
+    "do_kiep":"khong",
+    "tho_nguyen":14
+  },
+  "80":{
+    "ten":"Kinh thế hãi tục",
+    "buff":90,
+    "nang_luong":"Nội lực",
+    "hut_exp":90,
+    "khu_vuc":"Nhân giới",
+    "exp":900,
+    "do_kiep":"khong",
+    "tho_nguyen":15
+  },
+  "81":{
+    "ten":"Kinh thế hãi tục",
+    "buff":1.5,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.5,
+    "khu_vuc":"Nhân giới",
+    "exp":50,
+    "do_kiep":"khong",
+    "tho_nguyen":15
+  },
+  "82":{
+    "ten":"Kinh thế hãi tục",
+    "buff":1.7,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.7,
+    "khu_vuc":"Nhân giới",
+    "exp":70,
+    "do_kiep":"khong",
+    "tho_nguyen":15
+  },
+  "83":{
+    "ten":"Kinh thế hãi tục",
+    "buff":1.9,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.9,
+    "khu_vuc":"Nhân giới",
+    "exp":90,
+    "do_kiep":"khong",
+    "tho_nguyen":15
+  },
+  "84":{
+    "ten":"Kinh thế hãi tục",
+    "buff":2.1,
+    "nang_luong":"Nội lực",
+    "hut_exp":2.1,
+    "khu_vuc":"Nhân giới",
+    "exp":110,
+    "do_kiep":"khong",
+    "tho_nguyen":15
+  },
+  "85":{
+    "ten":"Kinh thiên động địa",
+    "buff":130,
+    "nang_luong":"Nội lực",
+    "hut_exp":130,
+    "khu_vuc":"Nhân giới",
+    "exp":1300,
+    "do_kiep":"khong",
+    "tho_nguyen":16
+  },
+  "86":{
+    "ten":"Kinh thiên động địa",
+    "buff":1.5,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.5,
+    "khu_vuc":"Nhân giới",
+    "exp":150,
+    "do_kiep":"khong",
+    "tho_nguyen":16
+  },
+  "87":{
+    "ten":"Chấn cổ thước kim",
+    "buff":100,
+    "nang_luong":"Nội lực",
+    "hut_exp":100,
+    "khu_vuc":"Nhân giới",
+    "exp":1700,
+    "do_kiep":"khong",
+    "tho_nguyen":17
+  },
+  "88":{
+    "ten":"Chấn cổ thước kim",
+    "buff":1.9,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.9,
+    "khu_vuc":"Nhân giới",
+    "exp":1900,
+    "do_kiep":"khong",
+    "tho_nguyen":17
+  },
+  "89":{
+    "ten":"Chấn cổ thước kim",
+    "buff":2.1,
+    "nang_luong":"Nội lực",
+    "hut_exp":2.1,
+    "khu_vuc":"Nhân giới",
+    "exp":2100,
+    "do_kiep":"khong",
+    "tho_nguyen":17
+  },
+  "90":{
+    "ten":"Siêu phàm nhập thánh",
+    "buff":99,
+    "nang_luong":"Nội lực",
+    "hut_exp":99,
+    "khu_vuc":"Nhân giới",
+    "exp":99000,
+    "do_kiep":"khong",
+    "tho_nguyen":18
+  },
+  "91":{
+    "ten":"Siêu phàm nhập thánh",
+    "buff":1.5,
+    "nang_luong":"Nội lực",
+    "hut_exp":1.5,
+    "khu_vuc":"Nhân giới",
+    "exp":500,
+    "do_kiep":"khong",
+    "tho_nguyen":18
+  },
+  "92":{
+    "ten":"Uy trấn hoàn vũ",
+    "buff":100,
+    "nang_luong":"Nội lực",
+    "hut_exp":10,
+    "khu_vuc":"Nhân giới",
+    "exp":10,
+    "do_kiep":"khong",
+    "tho_nguyen":19
+  },
+  "93":{
+    "ten":"Uy trấn hoàn vũ",
+    "buff":1.5,
+    "nang_luong":"Nội lực",
+    "hut_exp":150,
+    "khu_vuc":"Nhân giới",
+    "exp":150,
+    "do_kiep":"khong",
+    "tho_nguyen":19
+  },
+  "94":{
+    "ten":"Vô Tiền Khoáng Hậu",
+    "buff":20,
+    "nang_luong":"Nội lực",
+    "hut_exp":50,
+    "khu_vuc":"Nhân giới",
+    "exp":200,
+    "do_kiep":"khong",
+    "tho_nguyen":20
+  },
+  "95":{
+    "ten":"Vô Tiền Khoáng Hậu",
+    "buff":2.5,
+    "nang_luong":"Nội lực",
+    "hut_exp":25000,
+    "khu_vuc":"Nhân giới",
+    "exp":2500,
+    "do_kiep":"khong",
+    "tho_nguyen":20
+  },
+  "96":{
+    "ten":"Vô Tiền Khoáng Hậu",
+    "buff":3,
+    "nang_luong":"Nội lực",
+    "hut_exp":3000,
+    "khu_vuc":"Nhân giới",
+    "exp":300,
+    "do_kiep":"khong",
+    "tho_nguyen":20
+  },
+  "97":{
+    "ten":"Vô Tiền Khoáng Hậu",
+    "buff":3.5,
+    "nang_luong":"Nội lực",
+    "hut_exp":3500,
+    "khu_vuc":"Nhân giới",
+    "exp":350,
+    "do_kiep":"khong",
+    "tho_nguyen":20
+  },
+  "98":{
+    "ten":"Vô Tiền Khoáng Hậu",
+    "buff":4,
+    "nang_luong":"Nội lực",
+    "hut_exp":4000,
+    "khu_vuc":"Nhân giới",
+    "exp":400,
+    "do_kiep":"khong",
+    "tho_nguyen":20
+  },
+  "99":{
+    "ten":"Thiên Nhân Hợp Nhất",
+    "buff":100,
+    "nang_luong":"Nội lực",
+    "hut_exp":1000,
+    "khu_vuc":"Nhân giới",
+    "exp":10000,
+    "do_kiep":"khong",
+    "tho_nguyen":100
+  },
+  "100":{
+    "ten":"Thâm Tàng Bất Lộ",
+    "buff":9999,
+    "nang_luong":"ME",
+    "hut_exp":0,
+    "khu_vuc":"Nhân giới",
+    "exp":9999,
+    "do_kiep":"khong",
+    "tho_nguyen":500
+  }
+}

@@ -64,6 +64,9 @@
                                         <a class="dropdown-item" style="width:100%;" href="{{ url('trang-ca-nhan/'.Auth::user()->id) }}">
                                             Trang cá nhân
                                         </a>
+                                        <a class="dropdown-item" style="width:100%;" href="{{ url('nhan-vat/'.Auth::user()->id) }}">
+                                            Nhân vật
+                                        </a>
                                         @if (Auth::user() != null && Auth::user()->level == 0)
                                         <a style="width:100%;"><hr></a>
                                             <a class="dropdown-item" style="width:100%;" href="{{url('QL-User')}}">
@@ -75,6 +78,21 @@
                                             <a class="dropdown-item" style="width:100%;" href="{{url('truyen')}}">
                                                 Quản lý Truyện
                                             </a>    
+                                            <a class="dropdown-item" style="width:100%;" href="{{url('nhan-vat/'.Auth::user()->id)}}">
+                                                Quản lý Nhân vật
+                                            </a>  
+                                            <a class="dropdown-item" style="width:100%;" href="{{url('toc')}}">
+                                                Quản lý Chủng Tộc
+                                            </a>  
+                                            <a class="dropdown-item" style="width:100%;" href="{{url('nangluong')}}">
+                                                Quản lý Năng Lượng
+                                            </a> 
+                                            <a class="dropdown-item" style="width:100%;" href="{{url('thechat')}}">
+                                                Quản lý Thể Chất
+                                            </a> 
+                                            <a class="dropdown-item" style="width:100%;" href="{{url('thuoc-tinh-co-so')}}">
+                                                Quản lý Thuộc Tính Cơ Sở
+                                            </a> 
                                             <a style="width:100%;"><hr></a>                                         
                                         @endif
                                         <a class="dropdown-item" style="width:100%;">

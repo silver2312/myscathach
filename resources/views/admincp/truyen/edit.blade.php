@@ -10,13 +10,9 @@
                     <a class="btn btn-success col-md-2" href="{{url('truyen/')}}" role="button">Trở về</a>
                     <br>
 					<br>
-                    @if ($errors->any())
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
+                    @if (session('error'))
+                        <div class="alert alert-danger" role="alert">
+                            {{ session('error') }}
                         </div>
                     @endif
                     @if (session('status'))
@@ -24,7 +20,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <form  method="POST" action="{{route('truyen.update',[$bk->id])}}">
+                    <form  method="POST" action="{{route('truyen.update',[$bk->id])}}" enctype='multipart/form-data'>
                         @method('PUT')
                         @csrf
                         <div class="form-group">
@@ -40,7 +36,7 @@
                             <label>Link ảnh truyện</label>
                             <img src="{{$bk->bk_img}}" class="rounded mx-auto d-block" style="width:150px;height:250px;align:center;">
                             <br>
-                            <input type="text" value="{{$bk->bk_img}}" class="form-control" name="bk_img">
+                            <input type="file" class="form-control-file" name="bk_img">
                         </div>
                         <div class="form-group">
                             <label>Tác giả</label>

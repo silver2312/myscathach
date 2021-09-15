@@ -27,7 +27,7 @@
                     <ul class="infotruyen">
                         <li>Tên truyện: {{$bk->bk_name}}</li>
                         <li>Người đăng: <a style="text-decoration:none;color:skyblue;" href="{{url('trang-ca-nhan/'.$bk->userW->id)}}">{{$bk->userW->name}}</a></li>
-                        <li>Tác Giả: {{$bk->author}}</li>
+                        <li>Tác Giả: {{ __($bk->author) }}</li>
                         <li>Danh mục: 
                             @foreach($bk->thuocnhieudanhmuctruyen as $thuocdanh)
                                 <a href="{{url('the-loai/'.$thuocdanh->cate_slug)}}"><span class="badge badge-dark">{{$thuocdanh->cate_name}}</span></a>

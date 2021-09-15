@@ -1,17 +1,20 @@
 @extends('layouts.app')
 @section('content')
 @include('layouts.Inav')
+@if(count($bk_vip) > 0)
+    @include('layouts.slide')
+@endif
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-12">            
             <div class="card">
                 <h5 class="card-header">Truyện đề cử</h5>
-                <div class="card-body" style="margin-bottom:20px;">
+                <div class="card-body">
                     <div class="row">
-                        @foreach($bk_vip as $key => $tr)                                         
-                            <div class="col-lg-2 col-md-3 col-sm-3 col-4"> 
+                        @foreach($bk_vip as $key => $tr)
+                            <div class="col-lg-2 col-md-3 col-sm-3 col-4">
                                 <div class="card">
-                                    <img src="{{$tr->bk_img}}" class="card-img-top" style="max-height:229px;" alt="{{$tr->bk_name}}">                                    
+                                    <img src="{{$tr->bk_img}}" class="card-img-top" style="max-height:229px;" alt="{{$tr->bk_name}}">
                                     <div class="card-body" style="height:105px;">
                                         <a href="{{url('xemtruyen/'.$tr->id)}}" style="text-decoration:none;" class="font-weight-bold wrd">{{$tr->bk_name}}</a>
                                         <br>
@@ -23,6 +26,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="card">
                 <h5 class="card-header">Truyện nhiều lượt xem nhất</h5>
                 <div class="card-body">
@@ -66,7 +70,7 @@
                 <div class="card-body">
                     <div class="container">
                         <div class="row justify-content-center">                            
-                            <div class="col-md-9">
+                            <div class="col-md-8">
                                 @foreach($bk_up as $key => $tr)
                                     <div class="row mt-2">                                   
                                         <div class="col-md-2 col-3 col-lg-1">
@@ -79,9 +83,10 @@
                                     </div>   
                                 @endforeach                     
                             </div>
-                            <div col-md-3>
-                                <h3>Top người online</h3>
-                            </div>                            
+                            <br>
+                            <div class="col-md-4 mt-2" style="background-color:silver;">
+                                <iframe src="https://www5.cbox.ws/box/?boxid=928041&boxtag=RQAlk9" width="100%" height="500" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+                            </div>                           
                         </div>
                     </div>
                 </div>

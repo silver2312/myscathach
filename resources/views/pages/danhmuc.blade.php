@@ -15,6 +15,7 @@
                     <h5 class="card-header font-weight-bold text-uppercase">Truyện đang cập nhật...</h5>  
                 @else
                     <h5 class="card-header font-weight-bold text-uppercase">{{$cate_id->cate_name}}</h5>
+                    <small style="color:skyblue">{{$cate_id->cate_des}}</small>
                     
                     <div class="card-body">
                         <div class="row cate_data">
